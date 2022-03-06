@@ -1,1 +1,1 @@
-"# DISCO Graphic User Interface" 
+# DISCO Graphic User Interface 
