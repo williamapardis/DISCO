@@ -4,9 +4,11 @@ A python QT visual interface for operation of the DISCO Reactive Oxygen Sensor (
 
 ###### Install Git
 1. Download and install git for windows [here](https://gitforwindows.org/)
+2. next through everything and install
+3. Right click on desktop and select "Git Bash Here"
 2. Clone repo with application...
 ```
-git clone git@github.com:williamapardis/DISCO.git
+git clone https://github.com/williamapardis/DISCO.git
 ```
 ###### Install Python
 1. Download the 3.10.2 release of python by runing .exe in the install folder or downloading [here](https://www.python.org/downloads/).
