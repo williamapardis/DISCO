@@ -11,7 +11,8 @@ A python QT visual interface for operation of the DISCO Reactive Oxygen Sensor (
 git clone https://github.com/williamapardis/DISCO.git
 ```
 ###### Install Python
-1. Install the 3.10.2 release of python by runing .exe in the install folder or downloading [here](https://www.python.org/downloads/).
+1. Install the 3.10.2 release of python by runing python-3.10.2-amd64.exe in the DISCO/install folder or downloading [here](https://www.python.org/downloads/).
+- make sure to check Add Python 3.10 to PATH!!!!!!!!!!!!
 ###### Bluetooth COM Setup
 1. Through windows search navigate to the "Bluetooth and other device settings"
 2. Pairing device
@@ -21,3 +22,5 @@ git clone https://github.com/williamapardis/DISCO.git
 - Password: 1234
 3. Check  virtual COM port
 - Naviegate to the 
+
+Samsung Galaxy Book 2, 128GB, 12 Display, Windows 10
