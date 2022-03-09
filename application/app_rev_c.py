@@ -51,7 +51,8 @@ class pumpObj():
         self.calCoef = calCoef
 
         self.control = controlObj(app,self,xPos,yPos,16)
-
+        self.control.button.setStyleSheet("background-color:rgb(0,255,0)")
+        
     def setSpeed(self,flow):
         cmd = self.flow*self.calCoef
         print(self.ID+cmd)
@@ -145,6 +146,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.samplePump = pumpObj(self,ID='c',name='Sample',state=False,flow=7,calCoef=123.785,xPos=250,yPos=60)
         self.mclaPump   = pumpObj(self,ID='b',name='MCLA',state=False,flow=7,calCoef=123.785,xPos=700,yPos=60)
         self.sodPump    = pumpObj(self,ID='d',name='SOD',state=False,flow=1,calCoef=123.785,xPos=1150,yPos=60)
+            
         #write cal coef used to notes file
         with open(self.noteFile,'a') as trgt:
                 trgt.write(filename+'\n\n')
@@ -161,7 +163,7 @@ class MainWindow(QtWidgets.QMainWindow):
         font=self.eventBut.font()
         font.setPointSize(16)
         self.eventBut.setFont(font)
-        self.eventBut.setStyleSheet("background-color:rgb(153,153,153)")
+        self.eventBut.setStyleSheet("background-color:rgb(0,255,0)")
         self.eventBut.clicked.connect(self.note)
         #notes checkbox....
         self.noteBox = QCheckBox("Note",self)
@@ -302,10 +304,10 @@ class MainWindow(QtWidgets.QMainWindow):
     def clicked(self,pump):
         pump.changeState()
         if pump.state:
-            #pump.control.button.setStyleSheet("background-color:rgb(0,255,0)")
+            pump.control.button.setStyleSheet("background-color:rgb(255,0,0)")
             self.flowChg(pump)
         else:
-            #pump.control.button.setStyleSheet("background-color:rgb(153,153,153)")
+            pump.control.button.setStyleSheet("background-color:rgb(0,255,0)")
             #print('pump off, cmd: ' + pump.ID +'2048')
             self.DISCO.write((pump.ID + '2048').encode())
             self.DISCO.write((pump.ID + '2048').encode())
@@ -420,15 +422,11 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 if __name__ == '__main__':
-    try:
-        app = QtWidgets.QApplication(sys.argv)
+    
+    app = QtWidgets.QApplication(sys.argv)
 
-        w = MainWindow()
-        w.resize(2160,1440) 
+    w = MainWindow()
+    w.resize(2160,1440) 
      
-        app.exec_()
-    except:
-        w.DISCO.write(('A2048').encode())
-        w.DISCO.write(('A2048').encode())
-    w.DISCO.write(('A2048').encode())
-    w.DISCO.close()
+    app.exec_()
+    
