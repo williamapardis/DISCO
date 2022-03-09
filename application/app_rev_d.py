@@ -1,4 +1,4 @@
-# dependancies
+#dependancies
 import pip
 import argparse
 
@@ -100,9 +100,9 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         #Serial Object############################################################################
-        self.DISCO = serial.Serial('COM3',9600)
-        self.DISCO.flushInput()
-        self.DISCO.write(('R').encode())
+        # self.DISCO = serial.Serial('COM3',9600)
+        # self.DISCO.flushInput()
+        # self.DISCO.write(('R').encode())
         ##########################################################################################
 
         self.setStyleSheet("background-color: white;") 
@@ -274,7 +274,8 @@ class MainWindow(QtWidgets.QMainWindow):
         time = round(self.pmtIT.value()/10)
         cmd += str(time)
         
-        self.DISCO.write(cmd.encode())
+        #self.DISCO.write(cmd.encode())
+        print(cmd)
 
     def pmtVoltChg(self):
         
@@ -282,7 +283,8 @@ class MainWindow(QtWidgets.QMainWindow):
         voltage = round(self.pmtVoltage.value())
         cmd += str(voltage)
 
-        self.DISCO.write(cmd.encode())
+        #self.DISCO.write(cmd.encode())
+        print(cmd)
 
     
     def crtControl(self, pump, x, y, FS):
@@ -302,22 +304,24 @@ class MainWindow(QtWidgets.QMainWindow):
     def clicked(self,pump):
         pump.changeState()
         if pump.state:
-            #pump.control.button.setStyleSheet("background-color:rgb(0,255,0)")
+            pump.control.button.setStyleSheet("background-color:rgb(255,0,0)")
             self.flowChg(pump)
         else:
-            #pump.control.button.setStyleSheet("background-color:rgb(153,153,153)")
-            #print('pump off, cmd: ' + pump.ID +'2048')
-            self.DISCO.write((pump.ID + '2048').encode())
-            self.DISCO.write((pump.ID + '2048').encode())
+            pump.control.button.setStyleSheet("background-color:rgb(0,255,0)")
+            print('pump off, cmd: ' + pump.ID +'2048')
+            # self.DISCO.write((pump.ID + '2048').encode())
+            # self.DISCO.write((pump.ID + '2048').encode())
+            
 
 
     #flow rate changed 
     def flowChg(self,pump):
         pump.flow = float(pump.control.textbox.text())
-        #print('flowrate changed to ' + str(pump.flow) + ' [ml/min], cmd: ' + pump.ID + str(pump.flow*pump.calCoef+2048))
+        print('flowrate changed to ' + str(pump.flow) + ' [ml/min], cmd: ' + pump.ID + str(pump.flow*pump.calCoef+2048))
         if(pump.state):
-            self.DISCO.write((pump.ID + str(pump.flow*pump.calCoef+2048)).encode())
-            self.DISCO.write((pump.ID + str(pump.flow*pump.calCoef+2048)).encode())
+            print("pump is on")
+            # self.DISCO.write((pump.ID + str(pump.flow*pump.calCoef+2048)).encode())
+            # self.DISCO.write((pump.ID + str(pump.flow*pump.calCoef+2048)).encode())
 
     
     #event##
@@ -342,15 +346,16 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def update_plot(self):
         #print(self.DISCO.in_waiting)
-        if(self.DISCO.in_waiting>0):
-            data = self.DISCO.readline().decode().replace('\r\n','').split(',') 
+        if(1):#self.DISCO.in_waiting>0):
+            data=["1","1","1","1","1"]
+            # data = self.DISCO.readline().decode().replace('\r\n','').split(',') 
             t = datetime.now()
             #print(data)
-            print(self.DISCO.in_waiting)
-            while(self.DISCO.in_waiting>0):
-                self.DISCO.readline()
-                print('cleaning')
-
+            # print(self.DISCO.in_waiting)
+            # while(self.DISCO.in_waiting>0):
+            #     self.DISCO.readline()
+            #     print('cleaning')
+            
             if len(data) == 5:
 
                 flows = str(self.samplePump.state*self.samplePump.flow)+','
@@ -420,15 +425,9 @@ class MainWindow(QtWidgets.QMainWindow):
 
 
 if __name__ == '__main__':
-    try:
-        app = QtWidgets.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
 
-        w = MainWindow()
-        w.resize(2160,1440) 
+    w = MainWindow()
+    w.resize(2160,1440) 
      
-        app.exec_()
-    except:
-        w.DISCO.write(('A2048').encode())
-        w.DISCO.write(('A2048').encode())
-    w.DISCO.write(('A2048').encode())
-    w.DISCO.close()
+    app.exec_()
