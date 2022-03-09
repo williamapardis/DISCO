@@ -25,4 +25,6 @@ git clone https://github.com/williamapardis/DISCO.git
 - Naviegate to the 
 
 # Emulator
+1. install free-virtual-serial-port-tools.exe
+2. create a local bridge and record ports
 Samsung Galaxy Book 2, 128GB, 12 Display, Windows 10

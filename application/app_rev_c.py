@@ -100,7 +100,7 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         #Serial Object############################################################################
-        self.DISCO = serial.Serial('COM3',9600)
+        self.DISCO = serial.Serial('COM2',9600)
         self.DISCO.flushInput()
         self.DISCO.write(('R').encode())
         ##########################################################################################
