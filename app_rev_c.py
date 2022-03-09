@@ -98,7 +98,7 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         #Serial Object############################################################################
-        self.DISCO = serial.Serial('COM17',9600)
+        self.DISCO = serial.Serial('COM3',9600)
         self.DISCO.flushInput()
         self.DISCO.write(('R').encode())
         ##########################################################################################
@@ -205,7 +205,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.pmtVoltage.setAlignment(QtCore.Qt.AlignCenter)        
         self.pmtVoltage.setDecimals(0)
         self.pmtVoltage.setMaximum(1200) #5mins at 2Hz in seconds
-        self.pmtVoltage.setValue(1000)
+        self.pmtVoltage.setValue(1200)
         self.pmtVoltage.setSingleStep(100)
         #self.xScale.setMaximum
         self.pmtVoltage.setMinimum(100)
@@ -228,8 +228,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.pmtIT.setAlignment(QtCore.Qt.AlignCenter)        
         self.pmtIT.setDecimals(0)
         self.pmtIT.setMaximum(1000) #5mins at 2Hz in seconds
-        self.pmtIT.setValue(900) # in milisecounds
-        self.pmtIT.setSingleStep(100)
+        self.pmtIT.setValue(10)
+        self.pmtIT.setSingleStep(10)
         #self.xScale.setMaximum
         self.pmtIT.setMinimum(10)
         self.pmtIT.valueChanged.connect(lambda: self.pmtITChg())   
