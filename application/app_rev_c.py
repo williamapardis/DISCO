@@ -339,10 +339,17 @@ class MainWindow(QtWidgets.QMainWindow):
         self.sodPump.control.textbox.setText(str(self.sodPump.flow))
         self.samplePump.control.textbox.setText(str(self.samplePump.flow))
         
-        self.clicked(self.samplePump)
-        self.clicked(self.mclaPump)
-        self.clicked(self.sodPump)
-        
+        if(self.sotsPump.state):
+            if(not self.samplePump.state):
+                self.clicked(self.samplePump)
+            if(not self.mclaPump.state):
+                self.clicked(self.mclaPump)
+            if(not self.sodPump.state):
+                self.clicked(self.sodPump)
+        else:    
+            self.clicked(self.samplePump)
+            self.clicked(self.mclaPump)
+            self.clicked(self.sodPump)
 
     #event##
     def note(self):
