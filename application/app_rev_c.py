@@ -51,8 +51,8 @@ class pumpObj():
         self.calCoef = calCoef
 
         self.control = controlObj(app,self,xPos,yPos,16)
-        self.control.button.setStyleSheet("background-color:rgb(0,255,0)")
-        
+        #self.control.button.setStyleSheet("background-color:rgb(0,255,0)")
+
     def setSpeed(self,flow):
         cmd = self.flow*self.calCoef
         print(self.ID+cmd)
@@ -74,7 +74,7 @@ class controlObj():
         font.setPointSize(FS)
         self.button.setFont(font)
         self.button.setCheckable(True)
-        self.button.setStyleSheet("background-color:rgb(153,153,153)")
+        self.button.setStyleSheet("background-color:rgb(0,255,0)")
         self.button.clicked.connect(lambda: app.clicked(pump))
         #TEXTBOX#####
         self.textbox = QLineEdit(app)
@@ -88,8 +88,8 @@ class controlObj():
         self.textbox.returnPressed.connect(lambda: app.flowChg(pump))
         #LABEL#####
         self.label = QLabel("[mL/min]",app)
-        self.label.move(x+295,y+1)
-        self.label.resize(150,80)
+        self.label.move(x+205,y-40)
+        self.label.resize(150,40)
         font=self.label.font()
         font.setPointSize(FS-6)
         self.label.setFont(font)
@@ -143,10 +143,17 @@ class MainWindow(QtWidgets.QMainWindow):
 
         #Control Objects##########################################################################
         #Pumps....
-        self.samplePump = pumpObj(self,ID='c',name='Sample',state=False,flow=7,calCoef=123.785,xPos=250,yPos=60)
-        self.mclaPump   = pumpObj(self,ID='b',name='MCLA',state=False,flow=7,calCoef=123.785,xPos=700,yPos=60)
-        self.sodPump    = pumpObj(self,ID='d',name='SOD',state=False,flow=1,calCoef=123.785,xPos=1150,yPos=60)
-            
+        x=150
+        inc=350
+        self.samplePump = pumpObj(self,ID='c',name='Sample',state=False,flow=7,calCoef=123.785,xPos=x,yPos=60)
+        self.mclaPump   = pumpObj(self,ID='b',name='MCLA',state=False,flow=7,calCoef=123.785,xPos=x+inc,yPos=60)
+        self.sodPump    = pumpObj(self,ID='d',name='SOD',state=False,flow=1,calCoef=123.785,xPos=x+2*inc,yPos=60)
+        self.sotsPump   = pumpObj(self,ID='d',name='SOTs',state=False,flow=2,calCoef=123.785,xPos=x+3*inc,yPos=60)
+
+        self.sotsPump.control.button.clicked.connect(lambda: self.actionSOTs(self.sotsPump))
+        self.sotsPump.control.textbox.setVisible(False)
+        self.sotsPump.control.label.setVisible(False)
+
         #write cal coef used to notes file
         with open(self.noteFile,'a') as trgt:
                 trgt.write(filename+'\n\n')
@@ -316,12 +323,27 @@ class MainWindow(QtWidgets.QMainWindow):
     #flow rate changed 
     def flowChg(self,pump):
         pump.flow = float(pump.control.textbox.text())
-        #print('flowrate changed to ' + str(pump.flow) + ' [ml/min], cmd: ' + pump.ID + str(pump.flow*pump.calCoef+2048))
+        print('flowrate changed to ' + str(pump.flow) + ' [ml/min], cmd: ' + pump.ID + str(pump.flow*pump.calCoef+2048))
         if(pump.state):
-            self.DISCO.write((pump.ID + str(pump.flow*pump.calCoef+2048)).encode())
-            self.DISCO.write((pump.ID + str(pump.flow*pump.calCoef+2048)).encode())
+            cmd = (pump.ID + str(pump.flow*pump.calCoef+2048))
+            self.DISCO.write(cmd.encode())
+            self.DISCO.write(cmd.encode())
+            print(cmd)
 
-    
+    #SOTs Button
+    def actionSOTs(self,pump):
+        self.sodPump.flow = pump.flow
+        self.samplePump.flow = self.mclaPump.flow-self.sodPump.flow
+        print(pump.flow)
+        print(self.samplePump.flow)
+        self.sodPump.control.textbox.setText(str(self.sodPump.flow))
+        self.samplePump.control.textbox.setText(str(self.samplePump.flow))
+        
+        self.clicked(self.samplePump)
+        self.clicked(self.mclaPump)
+        self.clicked(self.sodPump)
+        
+
     #event##
     def note(self):
         self.eventBut.Flag = True
@@ -348,10 +370,10 @@ class MainWindow(QtWidgets.QMainWindow):
             data = self.DISCO.readline().decode().replace('\r\n','').split(',') 
             t = datetime.now()
             #print(data)
-            print(self.DISCO.in_waiting)
+            #print(self.DISCO.in_waiting)
             while(self.DISCO.in_waiting>0):
                 self.DISCO.readline()
-                print('cleaning')
+                #print('cleaning')
 
             if len(data) == 5:
 
