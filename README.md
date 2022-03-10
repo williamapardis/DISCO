@@ -1,8 +1,8 @@
 # DISCO Graphic User Interface 
-A python QT visual interface for operation of the DISCO Reactive Oxygen Sensor (ROS). Application controls 3 internal parastaltic pumps (Instech), recovers, displays and stores data from main optical transducer (Hamamatsu PMT) and auxillary sensors (Senserion Flow sensors). communicates over a bluetooth 2.0 connection appearing as a vitual comp port (HC06).
+A python QT visual interface for operation of the DISCO Reactive Oxygen Sensor (ROS). Application runs on a oil compensated Samsung Galaxy Book 2, 128GB, 12 Display, Windows 10. Application controls 3 internal parastaltic pumps (Instech), recovers, displays and stores data from main optical transducer (Hamamatsu PMT) and auxillary sensors (Senserion Flow sensors). communicates over a bluetooth 2.0 connection appearing as a vitual comp port (HC06).
+
 # Application
 ## Setup and Installation
-
 ###### Install Git
 1. Download and install git for windows [here](https://gitforwindows.org/)
 2. next through everything and install
@@ -23,8 +23,10 @@ git clone https://github.com/williamapardis/DISCO.git
 - Password: 1234
 3. Check  virtual COM port
 - Naviegate to the 
+## Dependencies
 
 # Emulator
 1. install free-virtual-serial-port-tools.exe
 2. create a local bridge and record ports
-Samsung Galaxy Book 2, 128GB, 12 Display, Windows 10
+
+# Utilities
