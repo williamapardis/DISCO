@@ -101,7 +101,7 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         #Serial Object############################################################################
-        self.DISCO = serial.Serial('COM2',9600)
+        self.DISCO = serial.Serial('COM6',9600)
         self.DISCO.flushInput()
         self.DISCO.write(('R').encode())
         ##########################################################################################
@@ -316,8 +316,8 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             pump.control.button.setStyleSheet("background-color:rgb(0,255,0)")
             #print('pump off, cmd: ' + pump.ID +'2048')
-            self.DISCO.write((pump.ID + '2048').encode())
-            self.DISCO.write((pump.ID + '2048').encode())
+            self.DISCO.write((pump.ID + '2048'+'\n').encode())
+            self.DISCO.write((pump.ID + '2048'+'\n').encode())
 
 
     #flow rate changed 
@@ -325,7 +325,7 @@ class MainWindow(QtWidgets.QMainWindow):
         pump.flow = float(pump.control.textbox.text())
         print('flowrate changed to ' + str(pump.flow) + ' [ml/min], cmd: ' + pump.ID + str(pump.flow*pump.calCoef+2048))
         if(pump.state):
-            cmd = (pump.ID + str(pump.flow*pump.calCoef+2048))
+            cmd = (pump.ID + str(pump.flow*pump.calCoef+2048)+'\n')
             self.DISCO.write(cmd.encode())
             self.DISCO.write(cmd.encode())
             print(cmd)

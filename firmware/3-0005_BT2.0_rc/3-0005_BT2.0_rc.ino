@@ -169,7 +169,7 @@ void loop() {
 
   
   while(Serial1.available()){
-    setMotorSpeed(Serial1.readString());      
+    setMotorSpeed(Serial1.readStringUntil('\n'));      
   }
   
 }
