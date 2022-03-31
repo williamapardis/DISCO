@@ -74,7 +74,7 @@ class controlObj():
         font.setPointSize(FS)
         self.button.setFont(font)
         self.button.setCheckable(True)
-        self.button.setStyleSheet("background-color:rgb(0,255,0)")
+        self.button.setStyleSheet("background-color:rgb(255,0,0)")
         self.button.clicked.connect(lambda: app.clicked(pump))
         #TEXTBOX#####
         self.textbox = QLineEdit(app)
@@ -311,10 +311,10 @@ class MainWindow(QtWidgets.QMainWindow):
     def clicked(self,pump):
         pump.changeState()
         if pump.state:
-            pump.control.button.setStyleSheet("background-color:rgb(255,0,0)")
+            pump.control.button.setStyleSheet("background-color:rgb(0,255,0)")
             self.flowChg(pump)
         else:
-            pump.control.button.setStyleSheet("background-color:rgb(0,255,0)")
+            pump.control.button.setStyleSheet("background-color:rgb(255,0,0)")
             #print('pump off, cmd: ' + pump.ID +'2048')
             self.DISCO.write((pump.ID + '2048'+'\n').encode())
             self.DISCO.write((pump.ID + '2048'+'\n').encode())
