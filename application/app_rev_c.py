@@ -374,6 +374,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def update_plot(self):
         #print(self.DISCO.in_waiting)
         if(self.DISCO.in_waiting>0):
+            print(self.DISCO.in_waiting)
             data = self.DISCO.readline().decode().replace('\r\n','').split(',') 
             t = datetime.now()
             #print(data)

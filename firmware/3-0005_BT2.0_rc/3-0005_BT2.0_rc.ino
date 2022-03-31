@@ -161,9 +161,11 @@ void loop() {
     while(Serial2.available()>0){Serial2.read();} //clear buffer
     data += (uint32_t)mybuf[0] << 24 | (uint32_t)mybuf[1] << 16 | (uint32_t)mybuf[2] << 8 | (uint32_t)mybuf[3];
 
-    //send data
+    //send data bluetooth
     Serial1.println(data);
+    //send data debug
     Serial.println(data);
+    Serial.print("bytes in waiting: ");Serial.println(Serial2.available());
   
   }
 
