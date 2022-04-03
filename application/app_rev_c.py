@@ -69,7 +69,7 @@ class controlObj():
         #BUTTON#####
         self.button = QPushButton(pump.name,app)
         self.button.move(x, y)
-        self.button.resize(175,80)
+        self.button.resize(250,150)
         font=self.button.font()
         font.setPointSize(FS)
         self.button.setFont(font)
@@ -78,8 +78,8 @@ class controlObj():
         self.button.clicked.connect(lambda: app.clicked(pump))
         #TEXTBOX#####
         self.textbox = QLineEdit(app)
-        self.textbox.move(x+185,y)
-        self.textbox.resize(100,80)
+        self.textbox.move(x+285,y)
+        self.textbox.resize(150,150)
         font=self.textbox.font()
         font.setPointSize(FS)
         self.textbox.setFont(font)
@@ -88,7 +88,7 @@ class controlObj():
         self.textbox.returnPressed.connect(lambda: app.flowChg(pump))
         #LABEL#####
         self.label = QLabel("[mL/min]",app)
-        self.label.move(x+205,y-40)
+        self.label.move(x+295,y-40)
         self.label.resize(150,40)
         font=self.label.font()
         font.setPointSize(FS-6)
@@ -127,8 +127,8 @@ class MainWindow(QtWidgets.QMainWindow):
         
 
         #PLOT initilization#######################################################################
-        self.plt1 = Plt(self,width=24, height=12, dpi=100)
-        self.plt1.move(-100,50)
+        self.plt1 = Plt(self,width=18, height=13, dpi=100)
+        self.plt1.move(-100,-75)
         self.plt1.axes.set_ylabel('PMT Counts', weight='bold', color='red')
         self.plt1.axes.set_xlabel('Time',weight='bold')
         self.plt1.axes.set_title('Time,PMT Counts',weight='bold',fontsize=40)
@@ -143,12 +143,12 @@ class MainWindow(QtWidgets.QMainWindow):
 
         #Control Objects##########################################################################
         #Pumps....
-        x=150
-        inc=350
-        self.samplePump = pumpObj(self,ID='c',name='Sample',state=False,flow=7,calCoef=123.785,xPos=x,yPos=60)
-        self.mclaPump   = pumpObj(self,ID='b',name='MCLA',state=False,flow=7,calCoef=123.785,xPos=x+inc,yPos=60)
-        self.sodPump    = pumpObj(self,ID='d',name='SOD',state=False,flow=1,calCoef=123.785,xPos=x+2*inc,yPos=60)
-        self.sotsPump   = pumpObj(self,ID='d',name='SOTs',state=False,flow=2,calCoef=123.785,xPos=x+3*inc,yPos=60)
+        x=1600
+   
+        self.samplePump = pumpObj(self,ID='c',name='Sample',state=False,flow=7,calCoef=123.785,xPos=x,yPos=300)
+        self.mclaPump   = pumpObj(self,ID='b',name='MCLA',state=False,flow=7,calCoef=123.785,xPos=x,yPos=525)
+        self.sodPump    = pumpObj(self,ID='d',name='SOD',state=False,flow=1,calCoef=123.785,xPos=x,yPos=750)
+        self.sotsPump   = pumpObj(self,ID='d',name='SOTs',state=False,flow=2,calCoef=123.785,xPos=x,yPos=975)
 
         self.sotsPump.control.button.clicked.connect(lambda: self.actionSOTs(self.sotsPump))
         self.sotsPump.control.textbox.setVisible(False)
@@ -166,7 +166,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.eventBut.num = 1
         self.eventBut.Flag = False
         self.eventBut.move(1600, 60)
-        self.eventBut.resize(175,80)
+        self.eventBut.resize(250,150)
         font=self.eventBut.font()
         font.setPointSize(16)
         self.eventBut.setFont(font)
@@ -174,8 +174,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.eventBut.clicked.connect(self.note)
         #notes checkbox....
         self.noteBox = QCheckBox("Note",self)
-        self.noteBox.move(1800,65)
-        self.noteBox.resize(160,70)
+        self.noteBox.move(1900,65)
+        self.noteBox.resize(160,160)
         self.noteBox.setStyleSheet("QCheckBox::indicator { width: 60px; height: 60px;}")
         font=self.noteBox.font()
         font.setPointSize(12)
@@ -184,10 +184,10 @@ class MainWindow(QtWidgets.QMainWindow):
 
         #Numeric Inputs###########################################################################
         #axis scalers###################################################
-        xRef = 1200
+        xRef = 100
         self.xScale = QDoubleSpinBox(self)
-        self.xScale.move(xRef,1185)
-        self.xScale.resize(150,80)
+        self.xScale.move(xRef,1140)
+        self.xScale.resize(250,150)
         font=self.xScale.font()
         font.setPointSize(12)
         self.xScale.setFont(font)
@@ -199,8 +199,8 @@ class MainWindow(QtWidgets.QMainWindow):
         #self.xScale.setMaximum
         self.xScale.setMinimum(60)
         ####axis scaler label
-        self.xScaleLabel = QLabel('X-AXIS:',self)
-        self.xScaleLabel.move(xRef-100, 1200)
+        self.xScaleLabel = QLabel('X:',self)
+        self.xScaleLabel.move(xRef-50, 1200)
         self.xScaleLabel.resize(60,50)
         font=self.xScaleLabel.font()
         font.setPointSize(12)
@@ -208,8 +208,8 @@ class MainWindow(QtWidgets.QMainWindow):
         #################################################################
         #PMT Voltage#####################################################
         self.pmtVoltage = QDoubleSpinBox(self)
-        self.pmtVoltage.move(xRef+300,1185)
-        self.pmtVoltage.resize(150,80)
+        self.pmtVoltage.move(xRef+375,1140)
+        self.pmtVoltage.resize(300,150)
         font=self.pmtVoltage.font()
         font.setPointSize(12)
         self.pmtVoltage.setFont(font)
@@ -223,7 +223,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.pmtVoltage.valueChanged.connect(lambda: self.pmtVoltChg())    
         ####axis scaler label
         self.pmtVoltageLabel = QLabel('V:',self)
-        self.pmtVoltageLabel.move(xRef+200, 1200)
+        self.pmtVoltageLabel.move(xRef+310, 1200)
         self.pmtVoltageLabel.resize(60,50)
         font=self.pmtVoltageLabel.font()
         font.setPointSize(12)
@@ -231,8 +231,8 @@ class MainWindow(QtWidgets.QMainWindow):
         #################################################################
         #PMT Integration#################################################
         self.pmtIT = QDoubleSpinBox(self)
-        self.pmtIT.move(xRef+600,1185)
-        self.pmtIT.resize(150,80)
+        self.pmtIT.move(xRef+800,1140)
+        self.pmtIT.resize(300,150)
         font=self.pmtIT.font()
         font.setPointSize(12)
         self.pmtIT.setFont(font)
@@ -242,11 +242,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.pmtIT.setValue(10)
         self.pmtIT.setSingleStep(10)
         #self.xScale.setMaximum
-        self.pmtIT.setMinimum(10)
+        self.pmtIT.setMinimum(100)
         self.pmtIT.valueChanged.connect(lambda: self.pmtITChg())   
         ####axis scaler label
         self.pmtITLabel = QLabel('IT:',self)
-        self.pmtITLabel.move(xRef+500, 1200)
+        self.pmtITLabel.move(xRef+720, 1200)
         self.pmtITLabel.resize(60,50)
         font=self.pmtITLabel.font()
         font.setPointSize(12)
@@ -256,7 +256,7 @@ class MainWindow(QtWidgets.QMainWindow):
         #Data Labels##############################################################################
         #filename label....
         self.fileLabel = QLabel('LOGGING TO: '+filename,self)
-        self.fileLabel.move(200, 1200)
+        self.fileLabel.move(1300, 1200)
         self.fileLabel.resize(700,50)
         font=self.fileLabel.font()
         font.setPointSize(12)
