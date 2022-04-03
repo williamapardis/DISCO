@@ -101,7 +101,7 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         #Serial Object############################################################################
-        self.DISCO = serial.Serial('COM6',9600)
+        self.DISCO = serial.Serial('COM3',9600)
         self.DISCO.flushInput()
         self.DISCO.write(('R').encode())
         ##########################################################################################
@@ -184,7 +184,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         #Numeric Inputs###########################################################################
         #axis scalers###################################################
-        xRef = 900
+        xRef = 1200
         self.xScale = QDoubleSpinBox(self)
         self.xScale.move(xRef,1185)
         self.xScale.resize(150,80)
@@ -222,7 +222,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.pmtVoltage.setMinimum(100)
         self.pmtVoltage.valueChanged.connect(lambda: self.pmtVoltChg())    
         ####axis scaler label
-        self.pmtVoltageLabel = QLabel('PMT V:',self)
+        self.pmtVoltageLabel = QLabel('V:',self)
         self.pmtVoltageLabel.move(xRef+200, 1200)
         self.pmtVoltageLabel.resize(60,50)
         font=self.pmtVoltageLabel.font()
@@ -245,7 +245,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.pmtIT.setMinimum(10)
         self.pmtIT.valueChanged.connect(lambda: self.pmtITChg())   
         ####axis scaler label
-        self.pmtITLabel = QLabel('PMT IT:',self)
+        self.pmtITLabel = QLabel('IT:',self)
         self.pmtITLabel.move(xRef+500, 1200)
         self.pmtITLabel.resize(60,50)
         font=self.pmtITLabel.font()
@@ -257,7 +257,7 @@ class MainWindow(QtWidgets.QMainWindow):
         #filename label....
         self.fileLabel = QLabel('LOGGING TO: '+filename,self)
         self.fileLabel.move(200, 1200)
-        self.fileLabel.resize(450,50)
+        self.fileLabel.resize(700,50)
         font=self.fileLabel.font()
         font.setPointSize(12)
         self.fileLabel.setFont(font)
