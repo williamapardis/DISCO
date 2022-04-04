@@ -346,9 +346,13 @@ class MainWindow(QtWidgets.QMainWindow):
                 self.clicked(self.mclaPump)
             if(not self.sodPump.state):
                 self.clicked(self.sodPump)
-        else:    
-            self.clicked(self.samplePump)
-            self.clicked(self.mclaPump)
+        else:   
+            self.samplePump.control.textbox.setText('7') 
+            self.flowChg(self.samplePump)
+            self.mclaPump.control.textbox.setText('7') 
+            self.flowChg(self.mclaPump)
+            # self.clicked(self.samplePump)
+            # self.clicked(self.mclaPump)
             self.clicked(self.sodPump)
 
     #event##
