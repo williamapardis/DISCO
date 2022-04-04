@@ -103,7 +103,9 @@ class MainWindow(QtWidgets.QMainWindow):
         #Serial Object############################################################################
         self.DISCO = serial.Serial('COM3',9600)
         self.DISCO.flushInput()
-        self.DISCO.write(('R').encode())
+        self.DISCO.write(('D'+'\n').encode())
+        time.sleep(0.5)
+        #self.DISCO.write(('R').encode())
         ##########################################################################################
 
         self.setStyleSheet("background-color: white;") 
@@ -262,7 +264,11 @@ class MainWindow(QtWidgets.QMainWindow):
         font.setPointSize(12)
         self.fileLabel.setFont(font)
         ##########################################################################################
-        
+
+        #init PMT states#######
+        self.pmtITChg()
+        #######################
+
         #timer to redraw plot#####################################################################
         self.timer1 = QtCore.QTimer()
         self.timer1.setInterval(100)
@@ -282,6 +288,7 @@ class MainWindow(QtWidgets.QMainWindow):
         cmd = 'P'
         time = round(self.pmtIT.value()/10)
         cmd += str(time)
+        cmd += '\n'
         
         self.DISCO.write(cmd.encode())
 
@@ -290,6 +297,7 @@ class MainWindow(QtWidgets.QMainWindow):
         cmd = 'V'
         voltage = round(self.pmtVoltage.value())
         cmd += str(voltage)
+        cmd += '\n'
 
         self.DISCO.write(cmd.encode())
 
