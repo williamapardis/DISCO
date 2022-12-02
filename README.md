@@ -35,12 +35,15 @@ git clone https://github.com/williamapardis/DISCO.git
 When running the application after installing python several errors can occur...
 
 1)  Error: 
-    ImportError: cannot import name 'Serial' from 'serial'
+
+    "ImportError: cannot import name 'Serial' from 'serial'"
     
     Solution: 
+    
     1. Uninstall the serial package using the command line by typing "pip uninstall pyserial"
     2. Reinstall pyserial type"pip install pyserial"
     
 2) Error:
+
    Solution:
    
