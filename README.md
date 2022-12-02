@@ -19,10 +19,10 @@ git clone https://github.com/williamapardis/DISCO.git
 2. Pairing device
 - Click "Add Bluetooth or other device" 
 - In the add a device window click "Bluetooth"
-- After giving time to search "HC-06" should appear, click pair/connect
+- After giving time to search "HC-05" should appear, click pair/connect
 - Password: 1234
 3. Check  virtual COM port
-- Naviegate to the 
+- Navigate to the 
 ## Dependencies
 
 # Emulator
@@ -30,3 +30,17 @@ git clone https://github.com/williamapardis/DISCO.git
 2. create a local bridge and record ports
 
 # Utilities
+
+##### Troubleshooting
+When running the application after installing python several errors can occur...
+
+1)  Error: 
+    ImportError: cannot import name 'Serial' from 'serial'
+    
+    Solution: 
+    1. Uninstall the serial package using the command line by typing "pip uninstall pyserial"
+    2. Reinstall pyserial type"pip install pyserial"
+    
+2) Error:
+   Solution:
+   
