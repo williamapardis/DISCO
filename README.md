@@ -31,7 +31,7 @@ git clone https://github.com/williamapardis/DISCO.git
 
 # Utilities
 
-##### Troubleshooting
+# Troubleshooting
 When running the application after installing python several errors can occur...
 
 1)  Error: 
