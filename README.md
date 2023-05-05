@@ -1,7 +1,12 @@
 # DISCO
-
-![image](https://user-images.githubusercontent.com/57682790/236154424-ac552e55-aca1-463a-8453-431461e9321c.png)
-
+<table>
+  <tr>
+    <td>DISCO is a diver operated chemical sensor to measure Reactive Oxygen spiecies (ROS)</td>
+    <td>![image](https://user-images.githubusercontent.com/57682790/236154424-ac552e55-aca1-463a-8453-431461e9321c.png)
+</td>
+  </tr>
+</table>
+  
 ## Instrument
 <table>
   <tr>
