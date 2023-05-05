@@ -5,12 +5,18 @@
 ![image](https://user-images.githubusercontent.com/57682790/236510513-a3f3bdfe-5adb-431b-92fb-c2289edfb4a4.png)
 
 ## Instrument
-
-![image](https://user-images.githubusercontent.com/57682790/236510606-38789243-a0e9-4dab-b485-3744a880a0c2.png)
-
-![image](https://user-images.githubusercontent.com/57682790/236510767-185df3e4-a2bd-4cce-9d7c-d95b94953fef.png)
-
-![image](https://user-images.githubusercontent.com/57682790/236510871-7a0bc613-8806-48a2-8b87-8f8fd02fb018.png)
+<table>
+  <tr>
+    <td>Drawing</td>
+    <td>On Deck</td>
+    <td>In Water</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236510606-38789243-a0e9-4dab-b485-3744a880a0c2.png" width="425"></td>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236510767-185df3e4-a2bd-4cce-9d7c-d95b94953fef.png" width="425"></td>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236510871-7a0bc613-8806-48a2-8b87-8f8fd02fb018.png" width="425"></td>
+  </tr>
+</table>
 
 
 A python QT visual interface for operation of the DISCO Reactive Oxygen Sensor (ROS). Application runs on a oil compensated Samsung Galaxy Book 2, 128GB, 12 Display, Windows 10. Application controls 3 internal parastaltic pumps (Instech), recovers, displays and stores data from main optical transducer (Hamamatsu PMT) and auxillary sensors (Senserion Flow sensors). communicates over a bluetooth 2.0 connection appearing as a vitual comp port (HC06).
