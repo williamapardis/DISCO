@@ -12,9 +12,9 @@
     <td>In Water</td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/57682790/236510606-38789243-a0e9-4dab-b485-3744a880a0c2.png" width="425"></td>
-    <td><img src="https://user-images.githubusercontent.com/57682790/236510767-185df3e4-a2bd-4cce-9d7c-d95b94953fef.png" width="425"></td>
-    <td><img src="https://user-images.githubusercontent.com/57682790/236510871-7a0bc613-8806-48a2-8b87-8f8fd02fb018.png" width="425"></td>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236510606-38789243-a0e9-4dab-b485-3744a880a0c2.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236510767-185df3e4-a2bd-4cce-9d7c-d95b94953fef.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236510871-7a0bc613-8806-48a2-8b87-8f8fd02fb018.png"></td>
   </tr>
 </table>
 
