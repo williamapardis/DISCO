@@ -2,8 +2,6 @@
 
 ![image](https://user-images.githubusercontent.com/57682790/236154424-ac552e55-aca1-463a-8453-431461e9321c.png)
 
-![image](https://user-images.githubusercontent.com/57682790/236510513-a3f3bdfe-5adb-431b-92fb-c2289edfb4a4.png)
-
 ## Instrument
 <table>
   <tr>
