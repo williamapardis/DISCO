@@ -36,6 +36,17 @@ Specifically DISCO is a embedded sensor system that includes electrical, optical
 ### Buck PCB
 
 ### Custom PCB (03-0006-01)
+<table>
+  <tr>
+    <td>Front</td>
+    <td>Back</td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236843034-e189b5bb-8fd5-4418-8e9e-c6892e0336d1.png"></td>
+    <td><img src="https://user-images.githubusercontent.com/57682790/236843104-c0722219-4262-419d-94fb-f0cacadb06fb.png"></td>
+  </tr>
+</table>
+
 
 ### Bluetooth Module HC06
 
