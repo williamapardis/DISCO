@@ -30,6 +30,15 @@ Specifically DISCO is a embedded sensor system that includes electrical, optical
 
 ## Embedded Electronics
 
+### Battery Charger PCB
+#### Battery 
+
+### Buck PCB
+
+### Custom PCB (03-0006-01)
+
+### Bluetooth Module HC06
+
 
 # Software
 
