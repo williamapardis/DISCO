@@ -5,9 +5,11 @@
     <td><img src="https://user-images.githubusercontent.com/57682790/236154424-ac552e55-aca1-463a-8453-431461e9321c.png"></td>
   </tr>
 </table>
+
 <table>
   <tr><td>DISCO measuring a sponge</td></tr>
   <tr><td><img src="https://user-images.githubusercontent.com/57682790/236510513-a3f3bdfe-5adb-431b-92fb-c2289edfb4a4.png"></td></tr>
+</table>
 
 ## Instrument
 Specifically DISCO is a embedded sensor system that includes electrical, optical and fluidic components working in concert and incased in a complex mechanical assembly to perform different types of photochemistry
