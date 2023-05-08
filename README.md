@@ -1,7 +1,7 @@
 # DISCO
 <table>
   <tr>
-    <td  valign="top" width="70%">DISCO is a diver operated chemical sensor to measure Reactive Oxygen spiecies (ROS) in shallow water ecosystems. Specifically the instrument measures Superoxide (O<sup>2-</sup>) and Hydrogen Peroxide (H<sub>2</sub>O<sub>2</sub>), both different forms of ROS. DISCO enable the scientist to bring the chemistry lab into the shallow reef ecosystem to make measurements in situ.</td>
+    <td width="70%">DISCO is a diver operated chemical sensor to measure Reactive Oxygen spiecies (ROS) in shallow water ecosystems. Specifically the instrument measures Superoxide (O<sup>2-</sup>) and Hydrogen Peroxide (H<sub>2</sub>O<sub>2</sub>), both different forms of ROS. DISCO enable the scientist to bring the chemistry lab into the shallow reef ecosystem to make measurements in situ.</td>
     <td><img src="https://user-images.githubusercontent.com/57682790/236154424-ac552e55-aca1-463a-8453-431461e9321c.png"></td>
   </tr>
 </table>
