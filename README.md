@@ -9,6 +9,7 @@
 ![image](https://user-images.githubusercontent.com/57682790/236510513-a3f3bdfe-5adb-431b-92fb-c2289edfb4a4.png)
 
 ## Instrument
+Specifically DISCO is a embedded sensor system that includes electrical, optical and fluidic components working in concert and incased in a complex mechanical assembly to perform different types of photochemistry
 <table>
   <tr>
     <td>Front</td>
@@ -21,12 +22,22 @@
 </table>
 
 
-
-A python QT visual interface for operation of the DISCO Reactive Oxygen Sensor (ROS). Application runs on a oil compensated Samsung Galaxy Book 2, 128GB, 12 Display, Windows 10. Application controls 3 internal parastaltic pumps (Instech), recovers, displays and stores data from main optical transducer (Hamamatsu PMT) and auxillary sensors (Senserion Flow sensors). communicates over a bluetooth 2.0 connection appearing as a vitual comp port (HC06).
 # Hardware
 
+## PMT and Flowcell
+
+## Pumps 
+
+## Embedded Electronics
+
+
 # Software
+
+## Firmware
+
 ## Application or Graphic User Interface
+A python QT visual interface for operation of the DISCO Reactive Oxygen Sensor (ROS). Application runs on a oil compensated Samsung Galaxy Book 2, 128GB, 12 Display, Windows 10. Application controls 3 internal parastaltic pumps (Instech), recovers, displays and stores data from main optical transducer (Hamamatsu PMT) and auxillary sensors (Senserion Flow sensors). communicates over a bluetooth 2.0 connection appearing as a vitual comp port (HC06).
+
 ### Setup and Installation
 ###### Install Git
 1. Download and install git for windows [here](https://gitforwindows.org/)
