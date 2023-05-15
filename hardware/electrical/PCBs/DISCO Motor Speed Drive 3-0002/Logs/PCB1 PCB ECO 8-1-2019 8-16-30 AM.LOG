@@ -1,0 +1,68 @@
+Added Component: Designator=C1(1608[0603])
+Added Component: Designator=C2(1608[0603])
+Added Component: Designator=C3(1608[0603])
+Added Component: Designator=C4(1608[0603])
+Added Component: Designator=P1(HDR1X4)
+Added Component: Designator=P2(HDR1X3)
+Added Component: Designator=P3(HDR1X2)
+Added Component: Designator=R1(J1-0603)
+Added Component: Designator=R2(J1-0603)
+Added Component: Designator=R3(J1-0603)
+Added Component: Designator=R4(J1-0603)
+Added Component: Designator=U1(DBZ0003A_L)
+Added Component: Designator=U2(*SOP65P640X120-14N)
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=+5 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=+1.25 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=-1.25 Pin=C4-2
+Added Pin To Net: NetName=+5 Pin=P1-1
+Added Pin To Net: NetName=+1.25 Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-3
+Added Pin To Net: NetName=-1.25 Pin=P1-4
+Added Pin To Net: NetName=GND Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=R4-2
+Added Pin To Net: NetName=+5 Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=+1.25 Pin=U2-4
+Added Pin To Net: NetName=-1.25 Pin=U2-11
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=NetC2_2 Pin=P2-3
+Added Pin To Net: NetName=NetC2_2 Pin=R1-1
+Added Pin To Net: NetName=NetC2_2 Pin=U1-2
+Added Net: Name=NetC2_2
+Added Pin To Net: NetName=NetP2_2 Pin=P2-2
+Added Pin To Net: NetName=NetP2_2 Pin=R3-1
+Added Net: Name=NetP2_2
+Added Pin To Net: NetName=NetP3_1 Pin=P3-1
+Added Pin To Net: NetName=NetP3_1 Pin=U2-13
+Added Pin To Net: NetName=NetP3_1 Pin=U2-14
+Added Net: Name=NetP3_1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=R2-1
+Added Pin To Net: NetName=NetR1_2 Pin=U2-2
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=U2-1
+Added Pin To Net: NetName=NetR2_2 Pin=U2-12
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=R4-1
+Added Pin To Net: NetName=NetR3_2 Pin=U2-3
+Added Net: Name=NetR3_2
+Added Member To Class: ClassName=Sheet1 Member=Component C1 Cap Semi
+Added Member To Class: ClassName=Sheet1 Member=Component C2 Cap Semi
+Added Member To Class: ClassName=Sheet1 Member=Component C3 Cap Semi
+Added Member To Class: ClassName=Sheet1 Member=Component C4 Cap Semi
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 4
+Added Member To Class: ClassName=Sheet1 Member=Component P2 Header 3
+Added Member To Class: ClassName=Sheet1 Member=Component P3 Header 2
+Added Member To Class: ClassName=Sheet1 Member=Component R1 Res3
+Added Member To Class: ClassName=Sheet1 Member=Component R2 Res3
+Added Member To Class: ClassName=Sheet1 Member=Component R3 Res3
+Added Member To Class: ClassName=Sheet1 Member=Component R4 Res3
+Added Member To Class: ClassName=Sheet1 Member=Component U1 REF3012AIDBZR
+Added Member To Class: ClassName=Sheet1 Member=Component U2 TLV6004

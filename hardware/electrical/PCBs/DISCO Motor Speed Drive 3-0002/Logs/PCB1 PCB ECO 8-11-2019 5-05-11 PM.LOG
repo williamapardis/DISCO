@@ -1,0 +1,13 @@
+Removed Member From Class: ClassName=Sheet1 Member=MODULE1
+Change Component Designator: OldDesignator=MODULE1 NewDesignator=U?
+Added Pin To Net: NetName=+3.3 Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Change Net Name : Old Net Name=NetMODULE1_13 New Net Name=NetU1_3
+Change Net Name : Old Net Name=NetMODULE1_14 New Net Name=NetU1_2
+Added Pin To Net: NetName=NetU?_3 Pin=U?-3
+Added Pin To Net: NetName=NetU?_3 Pin=U?-5
+Added Net: Name=NetU?_3
+Added Pin To Net: NetName=NetU?_4 Pin=U?-4
+Added Pin To Net: NetName=NetU?_4 Pin=U?-4
+Added Net: Name=NetU?_4
+Added Member To Class: ClassName=Sheet1 Member=Component U? HC-05

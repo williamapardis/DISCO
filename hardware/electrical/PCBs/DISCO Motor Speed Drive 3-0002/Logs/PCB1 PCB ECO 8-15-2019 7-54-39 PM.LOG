@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=U6-3
+Removed Pin From Net: NetName=GND Pin=U6-3
+Removed Pin From Net: NetName=NetU5_5 Pin=U6-5
+Removed Pin From Net: NetName=NetU5_5 Pin=U6-5
+Change Component Comment : Designator=U6 Old Comment=HC-05 New Comment=WRL-13764
+Added Pin To Net: NetName=GND Pin=U6-2
+Added Pin To Net: NetName=GND Pin=U6-2
+Added Pin To Net: NetName=NetU5_5 Pin=U6-3
+Added Pin To Net: NetName=NetU5_5 Pin=U6-3
+Added Pin To Net: NetName=NetU1_4 Pin=U1-4
+Added Pin To Net: NetName=NetU1_4 Pin=U6-20
+Added Pin To Net: NetName=NetU1_4 Pin=U6-20
+Added Net: Name=NetU1_4
+Added Member To Class: ClassName=Sheet1 Member=Component R4 Res3

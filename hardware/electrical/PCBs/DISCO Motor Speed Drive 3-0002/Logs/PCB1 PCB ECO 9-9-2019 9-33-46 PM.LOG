@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+1.25 Pin=P2-1
+Removed Pin From Net: NetName=-1.25 Pin=P2-5
+Added Pin To Net: NetName=+1.25 Pin=C2-2
+Added Pin To Net: NetName=+5 Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P2-5
+Added Pin To Net: NetName=+1.25 Pin=R8-1
+Added Pin To Net: NetName=+1.25 Pin=U2-2
+Change Net Name : Old Net Name=+1.25 New Net Name=+VREF
+Change Net Name : Old Net Name=-1.25 New Net Name=-VREF

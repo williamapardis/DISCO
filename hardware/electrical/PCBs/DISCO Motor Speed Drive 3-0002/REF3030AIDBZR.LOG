@@ -1,0 +1,22 @@
+Importer Log Report
+Project : DISCO Motor Speed Drive 3-0002.PrjPcb
+
+Section : Import Document - G:\My Drive\Printed Circuit Boards\Jason\DISCO\DISCO Motor Speed Drive 3-0002\Imported Files\REF3030AIDBZR.lia
+    Section : PCB Library - REF3030AIDBZR.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token REF3030AIDBZR On Line 164
+            Warning - 1 : Skipping Token attachedSymbol On Line 221
+        EndSection
+    EndSection
+
+    Section : SCH Library - REF3030AIDBZR.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token multiLayer On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 101
+            Warning - 1 : Skipping Token layerContents On Line 110
+            Warning - 1 : Skipping Token layerContents On Line 136
+        EndSection
+    EndSection
+EndSection

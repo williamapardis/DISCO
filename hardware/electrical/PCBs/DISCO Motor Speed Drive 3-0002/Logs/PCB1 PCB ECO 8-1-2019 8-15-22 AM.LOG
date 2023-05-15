@@ -1,0 +1,50 @@
+Added Component: Designator=C?(1608[0603])
+Added Component: Designator=C?(1608[0603])
+Added Component: Designator=C?(1608[0603])
+Added Component: Designator=C?(1608[0603])
+Added Component: Designator=P?(HDR1X2)
+Added Component: Designator=P?(HDR1X4)
+Added Component: Designator=P?(HDR1X3)
+Added Component: Designator=R?(J1-0603)
+Added Component: Designator=R?(J1-0603)
+Added Component: Designator=R?(J1-0603)
+Added Component: Designator=R?(J1-0603)
+Added Component: Designator=U?(DBZ0003A_L)
+Added Pin To Net: NetName=+1.25 Pin=C?-2
+Added Pin To Net: NetName=+1.25 Pin=P?-2
+Added Net: Name=+1.25
+Added Pin To Net: NetName=+5 Pin=C?-2
+Added Pin To Net: NetName=+5 Pin=P?-1
+Added Pin To Net: NetName=+5 Pin=U?-1
+Added Net: Name=+5
+Added Pin To Net: NetName=-1.25 Pin=C?-2
+Added Pin To Net: NetName=-1.25 Pin=P?-4
+Added Net: Name=-1.25
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=P?-1
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-3
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC?_2 Pin=C?-2
+Added Pin To Net: NetName=NetC?_2 Pin=P?-3
+Added Pin To Net: NetName=NetC?_2 Pin=R?-1
+Added Pin To Net: NetName=NetC?_2 Pin=U?-2
+Added Net: Name=NetC?_2
+Added Pin To Net: NetName=NetP?_1 Pin=P?-1
+Added Net: Name=NetP?_1
+Added Pin To Net: NetName=NetP?_2 Pin=P?-2
+Added Pin To Net: NetName=NetP?_2 Pin=R?-1
+Added Net: Name=NetP?_2
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=R?-2
+Added Pin To Net: NetName=NetR?_1 Pin=U?-2
+Added Net: Name=NetR?_1
+Added Pin To Net: NetName=NetR?_2 Pin=R?-2
+Added Pin To Net: NetName=NetR?_2 Pin=U?-1
+Added Net: Name=NetR?_2
+Added Class: Name=Sheet1

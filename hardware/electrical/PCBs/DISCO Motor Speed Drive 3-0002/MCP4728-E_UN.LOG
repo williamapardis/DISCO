@@ -1,0 +1,21 @@
+Importer Log Report
+Project : DISCO Motor Speed Drive 3-0002.PrjPcb
+
+Section : Import Document - G:\My Drive\Printed Circuit Boards\Jason\DISCO\DISCO Motor Speed Drive 3-0002\Imported Files\MCP4728-E_UN.lia
+    Section : PCB Library - MCP4728-E_UN.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token MCP4728-E/UN On Line 207
+            Warning - 1 : Skipping Token attachedSymbol On Line 352
+        EndSection
+    EndSection
+
+    Section : SCH Library - MCP4728-E_UN.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token multiLayer On Line 84
+            Warning - 1 : Skipping Token layerContents On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 103
+            Warning - 1 : Skipping Token layerContents On Line 154
+        EndSection
+    EndSection
+EndSection

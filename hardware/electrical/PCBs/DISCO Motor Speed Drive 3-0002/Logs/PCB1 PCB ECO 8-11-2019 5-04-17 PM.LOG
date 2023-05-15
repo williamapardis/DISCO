@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=Net*_4 Pin=MODULE1-4
+Added Net: Name=Net*_4
+Added Pin To Net: NetName=Net*_5 Pin=MODULE1-3
+Added Net: Name=Net*_5

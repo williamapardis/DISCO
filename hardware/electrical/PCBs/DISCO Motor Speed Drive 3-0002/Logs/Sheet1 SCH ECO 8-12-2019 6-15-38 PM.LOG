@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=U? Old Footprint=*SPARKFUN_WRL-13764 New Footprint=smd pin header 1x6
+Change Component Comment: Designator=U? Old Comment=WRL-13764 New Comment=HC-05
+Change Pin Designator/Name:  Old Designator=U?-2 Old Name=VCC New Designator =GND1 New Name=2
+Change Pin Designator/Name:  Old Designator=U?-2 Old Name=GND1 New Designator =TX New Name=3
+Change Pin Designator/Name:  Old Designator=U?-3 Old Name=TX New Designator =WKP New Name=5

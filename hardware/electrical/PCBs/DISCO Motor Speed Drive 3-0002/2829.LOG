@@ -1,0 +1,93 @@
+Importer Log Report
+Project : DISCO Motor Speed Drive 3-0002.PrjPcb
+
+Section : Import Document - G:\My Drive\Printed Circuit Boards\Jason\DISCO\DISCO Motor Speed Drive 3-0002\Imported Files\2829.lia
+    Section : PCB Library - 2829.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token 2829_IO-1 On Line 224
+            Warning - 1 : Skipping Token 2829_IO-2 On Line 348
+            Warning - 1 : Skipping Token attachedSymbol On Line 547
+            Warning - 1 : Skipping Token attachedSymbol On Line 548
+            Warning - 1 : Skipping Token 11 On Line 551
+            Warning - 1 : Skipping Token 10 On Line 553
+            Warning - 1 : Skipping Token 12 On Line 555
+            Warning - 1 : Skipping Token 9 On Line 557
+            Warning - 1 : Skipping Token 8 On Line 559
+            Warning - 1 : Skipping Token 1 On Line 561
+            Warning - 1 : Skipping Token 3 On Line 563
+            Warning - 1 : Skipping Token 2 On Line 565
+            Warning - 1 : Skipping Token 5 On Line 567
+            Warning - 1 : Skipping Token 4 On Line 569
+            Warning - 1 : Skipping Token 7 On Line 571
+            Warning - 1 : Skipping Token 6 On Line 573
+            Warning - 1 : Skipping Token 7 On Line 575
+            Warning - 1 : Skipping Token 6 On Line 577
+            Warning - 1 : Skipping Token 5 On Line 579
+            Warning - 1 : Skipping Token 4 On Line 581
+            Warning - 1 : Skipping Token 3 On Line 583
+            Warning - 1 : Skipping Token 2 On Line 585
+            Warning - 1 : Skipping Token 1 On Line 587
+            Warning - 1 : Skipping Token 9 On Line 589
+            Warning - 1 : Skipping Token 8 On Line 591
+            Warning - 1 : Skipping Token 16 On Line 593
+            Warning - 1 : Skipping Token 15 On Line 595
+            Warning - 1 : Skipping Token 14 On Line 597
+            Warning - 1 : Skipping Token 13 On Line 599
+            Warning - 1 : Skipping Token 12 On Line 601
+            Warning - 1 : Skipping Token 11 On Line 603
+            Warning - 1 : Skipping Token 10 On Line 605
+        EndSection
+
+        Section : Import Messages
+            Warning - 0 : PCAD Pattern Graphics [*ADAFRUIT_2829][Primary] associated with PCAD Component [2829] has been renamed to PCB FootPrint [*ADAFRUIT_2829_2829(Primary)].
+        EndSection
+    EndSection
+
+    Section : SCH Library - 2829.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token padStyleDef On Line 33
+            Warning - 1 : Skipping Token multiLayer On Line 108
+            Warning - 1 : Skipping Token layerContents On Line 142
+            Warning - 1 : Skipping Token layerContents On Line 156
+            Warning - 1 : Skipping Token layerContents On Line 166
+            Warning - 1 : Skipping Token layerContents On Line 180
+            Warning - 1 : Skipping Token layerContents On Line 190
+            Warning - 1 : Skipping Token layerContents On Line 200
+            Warning - 1 : Skipping Token layerContents On Line 212
+            Warning - 1 : Skipping Token 11 On Line 551
+            Warning - 1 : Skipping Token 10 On Line 553
+            Warning - 1 : Skipping Token 12 On Line 555
+            Warning - 1 : Skipping Token 9 On Line 557
+            Warning - 1 : Skipping Token 8 On Line 559
+            Warning - 1 : Skipping Token 1 On Line 561
+            Warning - 1 : Skipping Token 3 On Line 563
+            Warning - 1 : Skipping Token 2 On Line 565
+            Warning - 1 : Skipping Token 5 On Line 567
+            Warning - 1 : Skipping Token 4 On Line 569
+            Warning - 1 : Skipping Token 7 On Line 571
+            Warning - 1 : Skipping Token 6 On Line 573
+            Warning - 1 : Skipping Token 7 On Line 575
+            Warning - 1 : Skipping Token 6 On Line 577
+            Warning - 1 : Skipping Token 5 On Line 579
+            Warning - 1 : Skipping Token 4 On Line 581
+            Warning - 1 : Skipping Token 3 On Line 583
+            Warning - 1 : Skipping Token 2 On Line 585
+            Warning - 1 : Skipping Token 1 On Line 587
+            Warning - 1 : Skipping Token 9 On Line 589
+            Warning - 1 : Skipping Token 8 On Line 591
+            Warning - 1 : Skipping Token 16 On Line 593
+            Warning - 1 : Skipping Token 15 On Line 595
+            Warning - 1 : Skipping Token 14 On Line 597
+            Warning - 1 : Skipping Token 13 On Line 599
+            Warning - 1 : Skipping Token 12 On Line 601
+            Warning - 1 : Skipping Token 11 On Line 603
+            Warning - 1 : Skipping Token 10 On Line 605
+        EndSection
+
+        Section : Generating SCH Library - 2829.SchLib
+            Warning - 0 : PCAD Pattern Graphics [*ADAFRUIT_2829][Primary] associated with PCAD Component [2829] has been renamed to PCB FootPrint [*ADAFRUIT_2829_2829(Primary)].
+        EndSection
+    EndSection
+EndSection

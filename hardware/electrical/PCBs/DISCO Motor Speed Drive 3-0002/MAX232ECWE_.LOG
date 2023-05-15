@@ -1,0 +1,22 @@
+Importer Log Report
+Project : DISCO Motor Speed Drive 3-0002.PrjPcb
+
+Section : Import Document - G:\My Drive\Printed Circuit Boards\Jason\DISCO\DISCO Motor Speed Drive 3-0002\Imported Files\MAX232ECWE_.lia
+    Section : PCB Library - MAX232ECWE_.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token MAX232ECWE+ On Line 133
+            Warning - 1 : Skipping Token attachedSymbol On Line 320
+        EndSection
+    EndSection
+
+    Section : SCH Library - MAX232ECWE_.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token multiLayer On Line 84
+            Warning - 1 : Skipping Token layerContents On Line 102
+            Warning - 1 : Skipping Token layerContents On Line 111
+            Warning - 1 : Skipping Token layerContents On Line 120
+            Warning - 1 : Skipping Token layerContents On Line 126
+        EndSection
+    EndSection
+EndSection

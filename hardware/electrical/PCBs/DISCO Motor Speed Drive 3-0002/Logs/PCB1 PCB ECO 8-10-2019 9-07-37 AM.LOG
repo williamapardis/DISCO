@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=VA- Pin=U3-2
+Removed Pin From Net: NetName=VB- Pin=U3-6
+Removed Pin From Net: NetName=VC- Pin=U4-2
+Change Net Name : Old Net Name=VA- New Net Name=NetP2_2
+Change Net Name : Old Net Name=VB- New Net Name=NetP2_3
+Change Net Name : Old Net Name=VC- New Net Name=NetP2_4
+Added Pin To Net: NetName=VA- Pin=R4-2
+Added Pin To Net: NetName=VA- Pin=R8-2
+Added Pin To Net: NetName=VA- Pin=U3-2
+Added Net: Name=VA-
+Added Pin To Net: NetName=VB- Pin=R5-2
+Added Pin To Net: NetName=VB- Pin=R8-3
+Added Pin To Net: NetName=VB- Pin=U3-6
+Added Net: Name=VB-
+Added Pin To Net: NetName=VC- Pin=R6-2
+Added Pin To Net: NetName=VC- Pin=R8-4
+Added Pin To Net: NetName=VC- Pin=U4-2
+Added Net: Name=VC-

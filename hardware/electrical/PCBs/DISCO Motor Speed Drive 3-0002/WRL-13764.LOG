@@ -1,0 +1,25 @@
+Importer Log Report
+Project : DISCO Motor Speed Drive 3-0002.PrjPcb
+
+Section : Import Document - G:\My Drive\Printed Circuit Boards\Jason\DISCO\DISCO Motor Speed Drive 3-0002\Imported Files\WRL-13764.lia
+    Section : PCB Library - WRL-13764.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token WRL-13764 On Line 184
+            Warning - 1 : Skipping Token attachedSymbol On Line 521
+        EndSection
+    EndSection
+
+    Section : SCH Library - WRL-13764.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token padStyleDef On Line 33
+            Warning - 1 : Skipping Token padStyleDef On Line 45
+            Warning - 1 : Skipping Token multiLayer On Line 120
+            Warning - 1 : Skipping Token layerContents On Line 153
+            Warning - 1 : Skipping Token layerContents On Line 164
+            Warning - 1 : Skipping Token layerContents On Line 170
+            Warning - 1 : Skipping Token layerContents On Line 176
+        EndSection
+    EndSection
+EndSection

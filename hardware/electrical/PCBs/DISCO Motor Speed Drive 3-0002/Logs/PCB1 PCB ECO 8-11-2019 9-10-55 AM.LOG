@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=+3.3 Pin=*-2
+Removed Pin From Net: NetName=GND Pin=*-3
+Removed Member From Class: ClassName=Sheet1 Member=*
+Added Component: Designator=IC?(BLUETOOTHSERIALHC06)
+Added Member To Class: ClassName=Sheet1 Member=Component IC? Bluetooth / 802.15.1 Modules BLUETOOTH-SERIAL-HC-06   Source:  Datasheet

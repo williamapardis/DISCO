@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=+VREF Pin=C5-2
+Removed Pin From Net: NetName=+VREF Pin=C6-2
+Removed Pin From Net: NetName=+VREF Pin=U3-4
+Removed Pin From Net: NetName=+VREF Pin=U4-4
+Added Component: Designator=P?(HDR1X2)
+Added Component: Designator=U?(*SOIC127P1032X265-16N)
+Added Pin To Net: NetName=+3.3 Pin=C5-2
+Added Pin To Net: NetName=+3.3 Pin=C6-2
+Added Pin To Net: NetName=+5 Pin=P?-1
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=+3.3 Pin=U3-4
+Added Pin To Net: NetName=+3.3 Pin=U4-4
+Added Member To Class: ClassName=Sheet1 Member=Component P? Header 2
+Added Member To Class: ClassName=Sheet1 Member=Component U? MAX232ECWE+

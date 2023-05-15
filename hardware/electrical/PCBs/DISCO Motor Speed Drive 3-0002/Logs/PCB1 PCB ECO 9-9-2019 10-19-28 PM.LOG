@@ -1,0 +1,3 @@
+Added Component: Designator=U?(*SOP65P640X110-16N)
+Added Pin To Net: NetName=+3.3 Pin=U?-2
+Added Member To Class: ClassName=Sheet1 Member=Component U? MAX232AEUE

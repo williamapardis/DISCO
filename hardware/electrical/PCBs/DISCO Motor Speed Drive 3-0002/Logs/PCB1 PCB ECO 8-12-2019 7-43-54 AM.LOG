@@ -1,0 +1,16 @@
+Added Component: Designator=P2(molex output)
+Added Pin To Net: NetName=+1.25 Pin=P2-1
+Added Pin To Net: NetName=-1.25 Pin=P2-5
+Added Pin To Net: NetName=NetP2_2 Pin=P2-2
+Added Pin To Net: NetName=NetP2_2 Pin=U3-13
+Added Pin To Net: NetName=NetP2_2 Pin=U3-14
+Added Net: Name=NetP2_2
+Added Pin To Net: NetName=NetP2_3 Pin=P2-3
+Added Pin To Net: NetName=NetP2_3 Pin=U3-8
+Added Pin To Net: NetName=NetP2_3 Pin=U3-9
+Added Net: Name=NetP2_3
+Added Pin To Net: NetName=NetP2_4 Pin=P2-4
+Added Pin To Net: NetName=NetP2_4 Pin=U4-13
+Added Pin To Net: NetName=NetP2_4 Pin=U4-14
+Added Net: Name=NetP2_4
+Added Member To Class: ClassName=Sheet1 Member=Component P2 Header 5

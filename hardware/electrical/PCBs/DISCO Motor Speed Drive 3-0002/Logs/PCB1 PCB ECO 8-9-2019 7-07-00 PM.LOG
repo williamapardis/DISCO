@@ -1,0 +1,4 @@
+Added Component: Designator=U3(resistor Bus)
+Added Component: Designator=U4(resistor Bus)
+Added Member To Class: ClassName=Sheet1 Member=Component U3 Res1
+Added Member To Class: ClassName=Sheet1 Member=Component U4 Res1

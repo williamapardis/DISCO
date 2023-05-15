@@ -1,0 +1,8 @@
+Added Component: Designator=IC?(BLUETOOTHSERIALHC06)
+Added Component: Designator=U?(HDR1X6)
+Added Pin To Net: NetName=+3.3 Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=NetU?_4 Pin=U?-4
+Added Pin To Net: NetName=NetU?_3 Pin=U?-5
+Added Member To Class: ClassName=Sheet1 Member=Component IC? Bluetooth / 802.15.1 Modules BLUETOOTH-SERIAL-HC-06   Source:  Datasheet
+Added Member To Class: ClassName=Sheet1 Member=Component U? HC-05

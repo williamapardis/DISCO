@@ -1,0 +1,18 @@
+Added Component: Designator=P1(flow sensor)
+Added Component: Designator=P2(flow sensor)
+Added Component: Designator=P3(flow sensor)
+Added Pin To Net: NetName=SDA1 Pin=P1-2
+Added Pin To Net: NetName=+3.3 Pin=P1-3
+Added Pin To Net: NetName=GND Pin=P1-4
+Added Pin To Net: NetName=SCL1 Pin=P1-5
+Added Pin To Net: NetName=SDA2 Pin=P2-2
+Added Pin To Net: NetName=+3.3 Pin=P2-3
+Added Pin To Net: NetName=GND Pin=P2-4
+Added Pin To Net: NetName=SCL2 Pin=P2-5
+Added Pin To Net: NetName=SDA3 Pin=P3-2
+Added Pin To Net: NetName=+3.3 Pin=P3-3
+Added Pin To Net: NetName=GND Pin=P3-4
+Added Pin To Net: NetName=SCL3 Pin=P3-5
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Header 6
+Added Member To Class: ClassName=Sheet1 Member=Component P2 Header 6
+Added Member To Class: ClassName=Sheet1 Member=Component P3 Header 6
